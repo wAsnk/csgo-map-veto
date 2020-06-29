@@ -17,18 +17,18 @@ data class MapVeto (
     var Name : String,
 
     @ColumnInfo(name = "Team1")
-    var Team1 : Long,
+    var Team1 : String,
 
     @ColumnInfo(name = "Team2")
-    var Team2 : Long,
+    var Team2 : String,
 
     /*@ColumnInfo(name = "TimeStamp")
     var TimeStamp: String = "",*/
 
-    var VetoList: List<Veto>
+    var VetoList: MutableList<Veto>
 ) {
 
     override fun toString(): String {
-        return Name + " " + Team1.toString() + " " + Team2.toString()
+        return Name + " " + Team1 + " " + Team2
     }
 }
