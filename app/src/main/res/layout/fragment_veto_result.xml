@@ -28,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Back to Main Menu" />
+            android:text="@string/back_to_main_menu"
+            android:textColor="@color/buttonTextColor"/>
     </LinearLayout>
 </FrameLayout>

@@ -1,6 +1,7 @@
 package com.example.csgomapveto
 
 import android.graphics.drawable.ColorDrawable
+import android.opengl.Visibility
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -14,7 +15,9 @@ import androidx.navigation.findNavController
 import com.example.csgomapveto.data.*
 import com.example.csgomapveto.data.Map
 import kotlinx.android.synthetic.main.fragment_new_veto_settings.*
+import kotlinx.android.synthetic.main.fragment_veto_rundown.*
 import kotlinx.android.synthetic.main.fragment_veto_rundown.view.*
+import kotlinx.android.synthetic.main.fragment_veto_rundown.view.goToResultBtn
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -71,6 +74,7 @@ class VetoRundownFragment : Fragment(), View.OnClickListener {
 
         viewModel.newMapveto = MapVeto(Name = viewOfLayout.versusTeams.text.toString(), Team1 = viewModel.selectedTeam1.Name, Team2 = viewModel.selectedTeam2.Name, VetoList = mutableListOf())
         viewModel.vetoNumber = 1
+        viewOfLayout.goToResultBtn.visibility = View.GONE
     }
     override fun onClick(v: View?) {
         actualTeam = (viewModel.vetoNumber - 1) % 2
@@ -104,6 +108,7 @@ class VetoRundownFragment : Fragment(), View.OnClickListener {
                 }
             }
             GlobalScope.launch {viewModel.repository.insertMapveto(viewModel.newMapveto)}
+            viewOfLayout.goToResultBtn.visibility = View.VISIBLE
 
         }
     }

@@ -31,14 +31,17 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="@string/NewVeto"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textColor="@color/buttonTextColor"
+            />
 
         <Button
             android:id="@+id/NewTeamButton"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="@string/NewTeam"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textColor="@color/buttonTextColor"/>
 
         <Button
             android:id="@+id/OldVetoButton"

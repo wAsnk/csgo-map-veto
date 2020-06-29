@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="navBarColor">#f17300</color>
+    <color name="colorPrimary">#3e7cb1</color>
+    <color name="colorPrimaryDark">#054A91</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="MainBackgroundColor">#BEBEBE</color>
+    <color name="MainBackgroundColor">#dbe4ee</color>
     <color name="BanBGColor">#FF6666</color>
     <color name="PickBGColor">#75FF66</color>
     <color name="DeciderBGColor">#FFE352</color>
+    <color name="buttonColor">#054A91</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
 
 </resources>

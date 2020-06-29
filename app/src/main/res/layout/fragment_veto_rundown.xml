@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="10dp"
+    android:padding="20dp"
     tools:context=".VetoRundownFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -18,59 +18,71 @@
             android:id="@+id/versusTeams"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Team1 vs. Team2"
+            android:text="@string/team1_vs_team2"
             android:textAlignment="center"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"/>
 
 <!--DE_VERTIGO, DE_INFERNO, DE_NUKE, DE_OVERPASS, DE_TRAIN, DE_MIRAGE, DE_DUST2, TBD -->
         <Button
             android:id="@+id/de_vertigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DE_VERTIGO" />
+            android:text="@string/de_vertigo"
+            android:textColor="@color/buttonTextColor"
+            />
 
         <Button
             android:id="@+id/de_inferno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DE_INFERNO" />
+            android:text="@string/de_inferno"
+            android:textColor="@color/buttonTextColor"/>
 
         <Button
             android:id="@+id/de_nuke"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DE_NUKE" />
+            android:text="@string/de_nuke"
+            android:textColor="@color/buttonTextColor"/>
 
         <Button
             android:id="@+id/de_overpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DE_OVERPASS" />
+            android:text="@string/de_overpass"
+            android:textColor="@color/buttonTextColor"/>
 
         <Button
             android:id="@+id/de_train"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DE_TRAIN" />
+            android:text="@string/de_train"
+            android:textColor="@color/buttonTextColor"/>
 
         <Button
             android:id="@+id/de_mirage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DE_MIRAGE" />
+            android:text="@string/de_mirage"
+            android:textColor="@color/buttonTextColor"/>
 
         <Button
             android:id="@+id/de_dust2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DE_DUST2" />
+            android:text="@string/de_dust2"
+            android:textColor="@color/buttonTextColor"
+            />
 
         <Button
             android:id="@+id/goToResultBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Result" />
+            android:text="@string/result"
+            android:textColor="@color/buttonTextColor"/>
     </LinearLayout>
 
 </FrameLayout>

@@ -16,7 +16,7 @@
             android:id="@+id/vetoSettingsTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Veto Settings"
+            android:text="@string/veto_settings"
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -31,7 +31,7 @@
                 android:id="@+id/selectTeamtxt"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Select teams:"
+                android:text="@string/select_teams"
                 android:layout_weight=".7"/>
 
             <Spinner
@@ -44,7 +44,7 @@
                 android:id="@+id/versusText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="vs."
+                android:text="@string/vs"
                 android:layout_weight="0.2"/>
 
             <Spinner
@@ -111,7 +111,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".7"
-                android:text="Starts veto:" />
+                android:text="@string/starts_veto" />
 
             <Spinner
                 android:id="@+id/teamToStart"
@@ -124,8 +124,9 @@
             android:id="@+id/startVeto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Start the veto"
-            android:layout_gravity="center_horizontal"/>
+            android:text="@string/start_the_veto"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/buttonTextColor"/>
 
     </LinearLayout>
 
