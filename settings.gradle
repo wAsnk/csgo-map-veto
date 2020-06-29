@@ -1,0 +1,2 @@
+rootProject.name='CSGO Map Veto'
+include ':app'

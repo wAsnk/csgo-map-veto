@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CSGO Map Veto</string>
+    <string name="CSGO_MAP_VETO">CSGO MAP VETO</string>
+    <string name="NewVeto">New Veto</string>
+    <string name="NewTeam">New Team</string>
+    <string name="OldVeto">Old Vetos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="TeamToStart">
+        <item>Team1</item>
+        <item>Team2</item>
+    </string-array>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.csgomapveto.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_newVetoSettingsFragment"
+            app:destination="@id/newVetoSettingsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_mapVetoHistoryFragment"
+            app:destination="@id/mapVetoHistoryFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_newTeamFragment"
+            app:destination="@id/newTeamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newVetoSettingsFragment"
+        android:name="com.example.csgomapveto.NewVetoSettingsFragment"
+        android:label="fragment_new_veto_settings"
+        tools:layout="@layout/fragment_new_veto_settings" >
+        <action
+            android:id="@+id/action_newVetoSettingsFragment_to_vetoRundownFragment"
+            app:destination="@id/vetoRundownFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vetoRundownFragment"
+        android:name="com.example.csgomapveto.VetoRundownFragment"
+        android:label="fragment_veto_rundown"
+        tools:layout="@layout/fragment_veto_rundown" >
+        <action
+            android:id="@+id/action_vetoRundownFragment_to_vetoResultFragment"
+            app:destination="@id/vetoResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vetoResultFragment"
+        android:name="com.example.csgomapveto.VetoResultFragment"
+        android:label="fragment_veto_result"
+        tools:layout="@layout/fragment_veto_result" />
+    <fragment
+        android:id="@+id/mapVetoHistoryFragment"
+        android:name="com.example.csgomapveto.MapVetoHistoryFragment"
+        android:label="fragment_map_veto_history"
+        tools:layout="@layout/fragment_map_veto_history" />
+    <fragment
+        android:id="@+id/newTeamFragment"
+        android:name="com.example.csgomapveto.NewTeamFragment"
+        android:label="fragment_new_team"
+        tools:layout="@layout/fragment_new_team" />
+</navigation>
