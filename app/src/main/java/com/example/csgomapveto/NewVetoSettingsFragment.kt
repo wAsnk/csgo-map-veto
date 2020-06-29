@@ -10,6 +10,7 @@ import android.widget.EditText
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.viewModelScope
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import com.example.csgomapveto.data.Team
@@ -30,7 +31,7 @@ class NewVetoSettingsFragment : Fragment() {
         viewOfLayout = inflater.inflate(R.layout.fragment_new_veto_settings, container, false)
         viewModel = activity?.let { ViewModelProviders.of(it).get(MainActivityViewModel::class.java) }!!
         viewOfLayout.startVeto.setOnClickListener {
-                view: View -> Thread{mapVetoStartInit()}.join()
+                view: View -> mapVetoStartInit()
                 view.findNavController().navigate(NewVetoSettingsFragmentDirections.actionNewVetoSettingsFragmentToVetoRundownFragment())
         }
 
@@ -39,18 +40,20 @@ class NewVetoSettingsFragment : Fragment() {
     }
 
     private fun mapVetoStartInit(){
-        if(viewOfLayout.editText_Team1.text.toString() != "" && viewOfLayout.editText_Team2.text.toString() != ""){
+        /*if(viewOfLayout.editText_Team1.text.toString() != "" && viewOfLayout.editText_Team2.text.toString() != ""){
             val team1: Team = Team(Name = viewOfLayout.editText_Team1.text.toString())
             val team2: Team = Team(Name = viewOfLayout.editText_Team2.text.toString())
+            var lastTwoTeamFromRepo = listOf<Team>()
             GlobalScope.launch {
                 viewModel.repository.insertTeam(team1)
                 viewModel.repository.insertTeam(team2)
-            }
-            val lastTwoTeamFromRepo = viewModel.getLastTwoTeamsAsList()
+
+            lastTwoTeamFromRepo = viewModel.getLastTwoTeamsAsList()}
             viewModel.selectedTeam1 = lastTwoTeamFromRepo[0]
             viewModel.selectedTeam2 = lastTwoTeamFromRepo[1]
+        }*/
 
-        }
+
 
     }
 
