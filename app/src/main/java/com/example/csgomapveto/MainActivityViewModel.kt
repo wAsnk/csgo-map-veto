@@ -13,14 +13,20 @@ import com.example.csgomapveto.data.VetoDatabase
 
 class MainActivityViewModel(application: Application) : AndroidViewModel(application), AdapterView.OnItemSelectedListener {
     val repository : MapVetoRepository
+    val banNumer: Int = 4
+    val numberOfMaps : Int = 7
+
     var mapVetos : LiveData<List<MapVeto>>
     var teams : LiveData<List<Team>>
     var lastTwoTeams : LiveData<List<Team>>
+    var vetoNumber:Int = 1
+    var teamToStart : Int = 1
 
-    lateinit var selectedMapVeto : MapVeto
+    lateinit var newMapveto : MapVeto
+    //lateinit var selectedMapVeto : MapVeto
     lateinit var selectedTeam1 : Team
     lateinit var selectedTeam2 : Team
-    private var teamToStart : Int = 0
+
 
     init {
         val dataSource = VetoDatabase.getInstance(application).vetoDatabaseDao

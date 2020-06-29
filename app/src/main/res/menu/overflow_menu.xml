@@ -9,5 +9,6 @@
         android:title="New team" />
     <item
         android:id="@+id/mapVetoHistoryFragment"
-        android:title="Veto history" />
+        android:title="Veto history"
+        android:visible="false" />
 </menu>

@@ -42,7 +42,12 @@
         android:id="@+id/vetoResultFragment"
         android:name="com.example.csgomapveto.VetoResultFragment"
         android:label="fragment_veto_result"
-        tools:layout="@layout/fragment_veto_result" />
+        tools:layout="@layout/fragment_veto_result" >
+        <action
+            android:id="@+id/action_vetoResultFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment"
+            app:popUpTo="@id/mainMenuFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mapVetoHistoryFragment"
         android:name="com.example.csgomapveto.MapVetoHistoryFragment"

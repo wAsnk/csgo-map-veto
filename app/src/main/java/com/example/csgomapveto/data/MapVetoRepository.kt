@@ -2,6 +2,7 @@ package com.example.csgomapveto.data
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import java.util.*
 
 class MapVetoRepository(private  val database: VetoDatabaseDao) {
 
@@ -20,6 +21,14 @@ class MapVetoRepository(private  val database: VetoDatabaseDao) {
     suspend fun insertTeam(team: Team) {
         withContext(Dispatchers.IO) {
             database.insertTeam(team)
+        }
+    }
+
+    suspend fun getLastMapVeto(): MapVeto? {
+        return withContext(Dispatchers.IO) {
+            var lastLastMapVeto = database.getLastMapVeto()
+            var result = lastLastMapVeto
+            result
         }
     }
 

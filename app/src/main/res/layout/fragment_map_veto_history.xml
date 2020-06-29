@@ -5,10 +5,22 @@
     android:layout_height="match_parent"
     tools:context=".MapVetoHistoryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/historyLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="MapvetoHistory" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <ScrollView
+            android:id="@+id/historyScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/scrollLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
 </FrameLayout>

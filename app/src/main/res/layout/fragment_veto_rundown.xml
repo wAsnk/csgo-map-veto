@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
     tools:context=".VetoRundownFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -10,15 +12,59 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center|top">
 
         <TextView
             android:id="@+id/versusTeams"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Team1 vs. Team2" />
+            android:text="Team1 vs. Team2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
+<!--DE_VERTIGO, DE_INFERNO, DE_NUKE, DE_OVERPASS, DE_TRAIN, DE_MIRAGE, DE_DUST2, TBD -->
+        <Button
+            android:id="@+id/de_vertigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DE_VERTIGO" />
+
+        <Button
+            android:id="@+id/de_inferno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DE_INFERNO" />
+
+        <Button
+            android:id="@+id/de_nuke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DE_NUKE" />
+
+        <Button
+            android:id="@+id/de_overpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DE_OVERPASS" />
+
+        <Button
+            android:id="@+id/de_train"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DE_TRAIN" />
+
+        <Button
+            android:id="@+id/de_mirage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DE_MIRAGE" />
+
+        <Button
+            android:id="@+id/de_dust2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DE_DUST2" />
 
         <Button
             android:id="@+id/goToResultBtn"

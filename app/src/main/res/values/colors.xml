@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="MainBackgroundColor">#BEBEBE</color>
+    <color name="BanBGColor">#FF6666</color>
+    <color name="PickBGColor">#75FF66</color>
+    <color name="DeciderBGColor">#FFE352</color>
+
 </resources>
