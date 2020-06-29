@@ -7,7 +7,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 
-@Database(entities = [MapVeto::class, Team::class], version = 30, exportSchema = false)
+@Database(entities = [MapVeto::class, Team::class], version = 1, exportSchema = false)
 abstract class VetoDatabase : RoomDatabase() {
 
     abstract val vetoDatabaseDao: VetoDatabaseDao
@@ -24,7 +24,7 @@ abstract class VetoDatabase : RoomDatabase() {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         VetoDatabase::class.java,
-                        "VetoDB"
+                        "Test"
                     )
                         .addCallback(seedDatabaseCallback(context))
                         .fallbackToDestructiveMigration()
